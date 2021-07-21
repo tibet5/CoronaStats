@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1240.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.Controller">
+   <children>
+      <StackPane layoutX="285.0">
+         <children>
+            <AnchorPane fx:id="continent" layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="955.0" style="-fx-background-color: #fff;">
+               <children>
+                  <ChoiceBox fx:id="continent_choice" layoutX="324.0" layoutY="191.0" prefHeight="25.0" prefWidth="308.0" styleClass="cont_choice_box" />
+                  <Pane layoutX="-3.0" layoutY="332.0" prefHeight="388.0" prefWidth="961.0" styleClass="continent-cards">
+                     <children>
+                        <Label fx:id="continent_lbl" layoutX="367.0" layoutY="21.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalCases_lbl" layoutX="367.0" layoutY="71.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="newCases_lbl" layoutX="367.0" layoutY="121.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalDeaths_lbl" layoutX="367.0" layoutY="171.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="newDeaths_lbl" layoutX="367.0" layoutY="221.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalRecovered_lbl" layoutX="367.0" layoutY="271.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="activeCases_lbl" layoutX="367.0" layoutY="321.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="21.0" prefHeight="35.0" prefWidth="200.0" text="Continent" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="71.0" prefHeight="35.0" prefWidth="200.0" text="Total Cases" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="121.0" prefHeight="35.0" prefWidth="200.0" text="New Cases" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="171.0" prefHeight="35.0" prefWidth="200.0" text="Total Deaths" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="221.0" prefHeight="35.0" prefWidth="200.0" text="New Deaths" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="271.0" prefHeight="35.0" prefWidth="200.0" text="Total Recovered" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="321.0" prefHeight="35.0" prefWidth="200.0" text="Active Cases" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Line endX="742.0" layoutX="147.0" layoutY="64.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="114.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="164.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="214.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="264.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="314.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="364.0" startX="-100.0" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="352.0" layoutY="128.0" text="PICK YOUR CONTINENT">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="news" layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="955.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="460.0" layoutY="350.0" text="NEws" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="total_corona" prefHeight="720.0" prefWidth="955.0" style="-fx-background-color: #0A52CC;">
+               <children>
+                  <PieChart fx:id="totalDataChart" layoutX="214.0" layoutY="39.0" />
+                  <Label layoutX="167.0" layoutY="548.0" text="Total Cases" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="387.0" layoutY="548.0" text="Total Deaths" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="604.0" layoutY="548.0" text="Total Recovered" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalcase" layoutX="167.0" layoutY="616.0" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totaldeaths" layoutX="387.0" layoutY="616.0" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalrecovered" layoutX="604.0" layoutY="616.0" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ScrollPane fx:id="news_scroll" prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <VBox fx:id="vbox_news" prefHeight="3150.0" prefWidth="943.0" />
+               </content>
+            </ScrollPane>
+            <AnchorPane fx:id="country_data" layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="955.0" style="-fx-background-color: #fff;">
+               <children>
+                  <ChoiceBox fx:id="country_choice" layoutX="324.0" layoutY="191.0" prefHeight="25.0" prefWidth="308.0" styleClass="cont_choice_box" />
+                  <Pane layoutX="-3.0" layoutY="332.0" prefHeight="388.0" prefWidth="961.0" styleClass="continent-cards">
+                     <children>
+                        <Label fx:id="country_lbl" layoutX="367.0" layoutY="21.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalCases_lbl_country" layoutX="367.0" layoutY="71.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="newCases_lbl_country" layoutX="367.0" layoutY="121.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalDeaths_lbl_country" layoutX="367.0" layoutY="171.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="newDeaths_lbl_country" layoutX="367.0" layoutY="221.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalRecovered_lbl_country" layoutX="367.0" layoutY="271.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="activeCases_lbl_country" layoutX="367.0" layoutY="321.0" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="21.0" prefHeight="35.0" prefWidth="200.0" text="Country" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="71.0" prefHeight="35.0" prefWidth="200.0" text="Total Cases" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="121.0" prefHeight="35.0" prefWidth="200.0" text="New Cases" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="171.0" prefHeight="35.0" prefWidth="200.0" text="Total Deaths" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="221.0" prefHeight="35.0" prefWidth="200.0" text="New Deaths" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="271.0" prefHeight="35.0" prefWidth="200.0" text="Total Recovered" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="321.0" prefHeight="35.0" prefWidth="200.0" text="Active Cases" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Line endX="742.0" layoutX="147.0" layoutY="64.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="114.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="164.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="214.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="264.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="314.0" startX="-100.0" />
+                        <Line endX="742.0" layoutX="147.0" layoutY="364.0" startX="-100.0" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="352.0" layoutY="128.0" text="PICK YOUR COUNTRY">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <VBox prefHeight="720.0" prefWidth="285.0" styleClass="vb_menu">
+         <children>
+            <ImageView fitHeight="230.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@virüs%203.png" />
+               </image></ImageView>
+            <JFXButton fx:id="Countrie_btn" alignment="CENTER" onMouseClicked="#handleCliks" prefHeight="60.0" prefWidth="305.0" ripplerFill="BLACK" styleClass="btn-menu" text="Country Data" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="TotalData_btn" alignment="CENTER" onMouseClicked="#handleCliks" prefHeight="60.0" prefWidth="305.0" ripplerFill="BLACK" styleClass="btn-menu" text="Total Corona Data" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="News_btn" alignment="CENTER" onMouseClicked="#handleCliks" prefHeight="60.0" prefWidth="311.0" ripplerFill="BLACK" styleClass="btn-menu" text="Corona News" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Continent_btn" alignment="CENTER" onMouseClicked="#handleCliks" prefHeight="60.0" prefWidth="303.0" ripplerFill="BLACK" styleClass="btn-menu" text="Continental Data" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</Pane>
